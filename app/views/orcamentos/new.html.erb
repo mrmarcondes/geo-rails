@@ -1,0 +1,20 @@
+<h1>New</h1>
+
+<%= form_for @orcamento do |f|%>
+	<p><%= f.label :descricao %></p>
+	<p><%= f.text_field :descricao%></p>
+	<p>Cliente: <%= f.text_field :cliente%></p><br>
+
+	<%= f.fields_for :itens do |f_itens| %>
+		<p><%= f_itens.label :codigo %></p>
+		<p><%= f_itens.text_field :codigo%></p>
+
+		<p><%= f_itens.label :quantidade %></p>
+		<p><%= f_itens.text_field :quantidade%></p>
+
+	<% end %>
+
+	<p><%= f.submit "Gravar"%>
+
+<% end %>
+
