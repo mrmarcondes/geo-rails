@@ -1,5 +1,6 @@
 Geo::Application.routes.draw do
   get 'orcamentos/new', as: :geo_domain_orcamentos
+  get 'orcamentos' => "orcamentos#index"
   post 'orcamentos/new' => "orcamentos#create"
   # The priority is based upon order of creation:
   # first created -> highest priority.

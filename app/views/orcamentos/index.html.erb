@@ -1,0 +1,17 @@
+<h1>Index</h1>
+<p><%=link_to "Novo orçamento", orcamentos_new_path%></p>
+<div class="datagrid">
+<table>
+	<tr>
+		<th>Descrição</th>
+		<th>Cliente</th>
+	</tr>
+		<% @orcamentos.each do |orcamento|%>
+			<tr>
+
+				<td><%=orcamento.descricao%></td>
+				<td><%=orcamento.cliente%></td>
+			</tr>
+		<% end %>
+</table>
+</div>
