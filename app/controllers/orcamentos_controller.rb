@@ -12,4 +12,10 @@ class OrcamentosController < ApplicationController
 		Geo::Service::Orcamento.salvar params[:geo_domain_orcamento]
 		redirect_to action: :index
 	end
+
+	def show
+		@orcamento = Geo::Service::Orcamento.por_id params[:id]
+
+
+	end
 end

@@ -9,7 +9,7 @@
 		<% @orcamentos.each do |orcamento|%>
 			<tr>
 
-				<td><%=orcamento.descricao%></td>
+				<td><%=link_to orcamento.descricao, show_orcamentos_path(orcamento)%></td>
 				<td><%=orcamento.cliente%></td>
 			</tr>
 		<% end %>

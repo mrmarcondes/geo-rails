@@ -1,0 +1,22 @@
+<h1>Detalhes de orçamento</h1>
+
+<p>Cliente: <%= @orcamento.cliente %></p>
+<p>Descrição: <%= @orcamento.descricao %></p>
+
+<%if @orcamento.itens %>
+	<div class="datagrid">
+	<table>
+		<tr>
+			<th>Material</th>
+			<th>Quantidade</th>
+			<th>Localização</th>
+		</tr>
+			<% @orcamento.itens.each do |item|%>
+				<tr>
+					<td><%=item.codigo_material%></td>
+					<td><%=item.quantidade%></td>
+				</tr>
+			<% end %>
+	</table>
+	</div>
+<%end%>
