@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'geocoder'
-gem 'geo-core', '0.0.13'
+gem 'geo-core', '0.0.14'
 group :test do
   gem 'database_cleaner'
   gem 'rspec-rails'
