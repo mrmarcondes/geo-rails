@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'geocoder'
 gem 'geo-core', path: 'vendor/gems/geo-core'
-gem 'bson_ext'
-gem 'mongoid'
 
 group :test do
   gem 'database_cleaner'

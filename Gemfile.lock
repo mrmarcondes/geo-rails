@@ -39,9 +39,6 @@ GEM
     arel (3.0.2)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
-    bson (1.8.2)
-    bson_ext (1.8.2)
-      bson (~> 1.8.2)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -146,13 +143,11 @@ PLATFORMS
 
 DEPENDENCIES
   autotest
-  bson_ext
   coffee-rails (~> 3.2.1)
   database_cleaner
   geo-core!
   geocoder
   jquery-rails
-  mongoid
   rails (= 3.2.11)
   rspec-nc
   rspec-rails
