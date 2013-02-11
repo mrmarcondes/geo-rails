@@ -15,6 +15,6 @@ test:
 production:
   sessions:
     default:
-      uri: mongodb://heroku:89a86add13ee75c9ad25aabe6a380fa6@linus.mongohq.com:10068/app11799809
+      uri: mongodb://heroku:89a86add13ee75c9ad25aabe6a380fa6@linus.mongohq.com:10068/app1179
   options:
     raise_not_found_error: false
