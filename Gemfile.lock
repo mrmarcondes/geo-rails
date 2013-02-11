@@ -48,7 +48,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    geo-core (0.0.11)
+    geo-core (0.0.12)
       geocoder
       mongoid
     geocoder (1.1.6)
@@ -145,7 +145,7 @@ DEPENDENCIES
   bson_ext
   coffee-rails (~> 3.2.1)
   database_cleaner
-  geo-core (= 0.0.11)
+  geo-core (= 0.0.12)
   geocoder
   jquery-rails
   mongoid
