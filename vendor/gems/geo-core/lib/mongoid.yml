@@ -1,0 +1,20 @@
+development:
+  sessions:
+    default:
+      database: geo
+      hosts:
+        - localhost:27017
+test:
+  sessions:
+    default:
+      database: geo_test
+      hosts:
+        - localhost:27017        
+  options:
+    raise_not_found_error: false
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
+  options:
+    raise_not_found_error: false
