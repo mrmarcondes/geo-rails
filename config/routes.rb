@@ -3,6 +3,8 @@ Geo::Application.routes.draw do
   get 'orcamentos' => "orcamentos#index"
   get 'orcamentos/:id' => "orcamentos#show", as: :show_orcamentos
   post 'orcamentos/new' => "orcamentos#create"
+  get 'orcamentos/:id/detail' => "orcamentos#item_orcamento_detail", as: :item_orcamento_detail
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

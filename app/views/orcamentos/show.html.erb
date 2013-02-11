@@ -15,6 +15,7 @@
 				<tr>
 					<td><%=item.codigo_material%></td>
 					<td><%=item.quantidade%></td>
+					<%if item.endereco_instalacao%><td><%=link_to "Ver endereço de instalação", item_orcamento_detail_path(item)%></td><%end%>	
 				</tr>
 			<% end %>
 	</table>

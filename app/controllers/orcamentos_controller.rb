@@ -15,7 +15,10 @@ class OrcamentosController < ApplicationController
 
 	def show
 		@orcamento = Geo::Service::Orcamento.por_id params[:id]
+	end
 
+	def item_orcamento_detail
+		@item = Geo::Service::Orcamento.item_orcamento_por_id params[:id]
 
 	end
 end
