@@ -2,7 +2,6 @@ class OrcamentosController < ApplicationController
 
 	def index
 		@orcamentos = Geo::Service::Orcamento.todos
-		puts @orcamentos.size
 	end
 
 	def new
