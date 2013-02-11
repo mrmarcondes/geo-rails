@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'geocoder'
-gem 'geo-core', '0.0.7'
+gem 'geo-core', '0.0.8'
 gem 'bson_ext'
 gem 'mongoid'
 
